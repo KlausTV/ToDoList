@@ -1,17 +1,10 @@
-/* -----------------------------------------------
-/* Author : Vincent Garreau  - vincentgarreau.com
-/* MIT license: http://opensource.org/licenses/MIT
-/* Demo / Generator : vincentgarreau.com/particles.js
-/* GitHub : github.com/VincentGarreau/particles.js
-/* How to use? : Check the GitHub README
-/* v2.0.0
-/* ----------------------------------------------- */
+
 
 var pJS = function(tag_id, params){
 
   var canvas_el = document.querySelector('#'+tag_id+' > .particles-js-canvas-el');
 
-  /* particles.js variables with default values */
+ 
   this.pJS = {
     canvas: {
       el: canvas_el,
@@ -217,7 +210,7 @@ var pJS = function(tag_id, params){
             pJS.fn.vendors.densityAutoParticles();
           }
 
-        /* density particles enabled */
+       
         pJS.fn.vendors.densityAutoParticles();
 
       });
@@ -236,11 +229,11 @@ var pJS = function(tag_id, params){
   };
 
 
-  /* --------- pJS functions - particles ----------- */
+
 
   pJS.fn.particle = function(color, opacity, position){
 
-    /* size */
+  
     this.radius = (pJS.particles.size.random ? Math.random() : 1) * pJS.particles.size.value;
     if(pJS.particles.size.anim.enable){
       this.size_status = false;
@@ -250,11 +243,11 @@ var pJS = function(tag_id, params){
       }
     }
 
-    /* position */
+  
     this.x = position ? position.x : Math.random() * pJS.canvas.w;
     this.y = position ? position.y : Math.random() * pJS.canvas.h;
 
-    /* check position  - into the canvas */
+    
     if(this.x > pJS.canvas.w - this.radius*2) this.x = this.x - this.radius;
     else if(this.x < this.radius*2) this.x = this.x + this.radius;
     if(this.y > pJS.canvas.h - this.radius*2) this.y = this.y - this.radius;
