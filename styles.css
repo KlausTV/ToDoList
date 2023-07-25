@@ -81,14 +81,14 @@ input {
 }
 
 .task .checkTask {
-  color: orange;
+  color: greenyellow;
   margin-right: 5px;
-  border: solid 2px orange;
+  border: solid 2px greenyellow;
   font-size: 1.5rem;
 }
 
 .task .checkTask:hover {
-  background-color: orange;
+  background-color: greenyellow;
   color: #fff;
 }
 
@@ -101,4 +101,7 @@ input {
 .task .deleteTask:hover {
   background-color: red;
   color: #fff;
+}
+#particles-js {
+  width: 100%;
 }
